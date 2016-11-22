@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4164ADA31DA2BC5F3861CD4F /* Pods_Epower1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276E7D1F8A2F33EDF35F1F47 /* Pods_Epower1UITests.framework */; };
+		83A5D01FAA48C89613D57274 /* Pods_Epower1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B62BE7F80086B7B8023EB5 /* Pods_Epower1.framework */; };
+		8E058A7E1DE4A4B80035F2BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */; };
 		8E6D33F91DD1D7A000791F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D33F81DD1D7A000791F58 /* AppDelegate.swift */; };
 		8E6D33FB1DD1D7A000791F58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D33FA1DD1D7A000791F58 /* ViewController.swift */; };
 		8E6D33FE1DD1D7A000791F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D33FC1DD1D7A000791F58 /* Main.storyboard */; };
@@ -14,6 +17,10 @@
 		8E6D34031DD1D7A000791F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D34011DD1D7A000791F58 /* LaunchScreen.storyboard */; };
 		8E6D340E1DD1D7A000791F58 /* Epower1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D340D1DD1D7A000791F58 /* Epower1Tests.swift */; };
 		8E6D34191DD1D7A000791F58 /* Epower1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D34181DD1D7A000791F58 /* Epower1UITests.swift */; };
+		8EDD0CAD1DE44EA1001AFB0A /* FirstTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD0CAC1DE44EA1001AFB0A /* FirstTableTableViewController.swift */; };
+		8EDD0CAF1DE48293001AFB0A /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD0CAE1DE48293001AFB0A /* FirstTableViewCell.swift */; };
+		8EDD0CB11DE48B61001AFB0A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD0CB01DE48B61001AFB0A /* SecondViewController.swift */; };
+		921A178C781A9F54A35799AA /* Pods_Epower1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F8889CB6C399E5765FA933 /* Pods_Epower1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1812B41F2F4553F382E2238B /* Pods-Epower1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1UITests/Pods-Epower1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		276E7D1F8A2F33EDF35F1F47 /* Pods_Epower1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epower1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD7F958E0B73D73DE21BA1C /* Pods-Epower1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1/Pods-Epower1.release.xcconfig"; sourceTree = "<group>"; };
+		59D8DC7049C0C1B65AD8C1D9 /* Pods-Epower1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1/Pods-Epower1.debug.xcconfig"; sourceTree = "<group>"; };
+		7F50BBE952B655973A07EC9E /* Pods-Epower1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1Tests/Pods-Epower1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		8E6D33F51DD1D7A000791F58 /* Epower1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epower1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6D33F81DD1D7A000791F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E6D33FA1DD1D7A000791F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 		8E6D34141DD1D7A000791F58 /* Epower1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Epower1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6D34181DD1D7A000791F58 /* Epower1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epower1UITests.swift; sourceTree = "<group>"; };
 		8E6D341A1DD1D7A000791F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDD0CAC1DE44EA1001AFB0A /* FirstTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableTableViewController.swift; sourceTree = "<group>"; };
+		8EDD0CAE1DE48293001AFB0A /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		8EDD0CB01DE48B61001AFB0A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C08E8648D95C0FC2A4348765 /* Pods-Epower1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1UITests/Pods-Epower1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D25FAC91A80F5F7B0A4EF49E /* Pods-Epower1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1Tests/Pods-Epower1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F8889CB6C399E5765FA933 /* Pods_Epower1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epower1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B62BE7F80086B7B8023EB5 /* Pods_Epower1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epower1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A5D01FAA48C89613D57274 /* Pods_Epower1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921A178C781A9F54A35799AA /* Pods_Epower1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4164ADA31DA2BC5F3861CD4F /* Pods_Epower1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF06F8747A7BC504453E20B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59D8DC7049C0C1B65AD8C1D9 /* Pods-Epower1.debug.xcconfig */,
+				4CD7F958E0B73D73DE21BA1C /* Pods-Epower1.release.xcconfig */,
+				D25FAC91A80F5F7B0A4EF49E /* Pods-Epower1Tests.debug.xcconfig */,
+				7F50BBE952B655973A07EC9E /* Pods-Epower1Tests.release.xcconfig */,
+				C08E8648D95C0FC2A4348765 /* Pods-Epower1UITests.debug.xcconfig */,
+				1812B41F2F4553F382E2238B /* Pods-Epower1UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		38CCBAC27C185AF9983BC33D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6B62BE7F80086B7B8023EB5 /* Pods_Epower1.framework */,
+				D9F8889CB6C399E5765FA933 /* Pods_Epower1Tests.framework */,
+				276E7D1F8A2F33EDF35F1F47 /* Pods_Epower1UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E6D33EC1DD1D79E00791F58 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +127,8 @@
 				8E6D340C1DD1D7A000791F58 /* Epower1Tests */,
 				8E6D34171DD1D7A000791F58 /* Epower1UITests */,
 				8E6D33F61DD1D7A000791F58 /* Products */,
+				2EF06F8747A7BC504453E20B /* Pods */,
+				38CCBAC27C185AF9983BC33D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +151,10 @@
 				8E6D33FF1DD1D7A000791F58 /* Assets.xcassets */,
 				8E6D34011DD1D7A000791F58 /* LaunchScreen.storyboard */,
 				8E6D34041DD1D7A000791F58 /* Info.plist */,
+				8EDD0CAC1DE44EA1001AFB0A /* FirstTableTableViewController.swift */,
+				8EDD0CAE1DE48293001AFB0A /* FirstTableViewCell.swift */,
+				8EDD0CB01DE48B61001AFB0A /* SecondViewController.swift */,
+				8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */,
 			);
 			path = Epower1;
 			sourceTree = "<group>";
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E6D341D1DD1D7A000791F58 /* Build configuration list for PBXNativeTarget "Epower1" */;
 			buildPhases = (
+				CDE0408F262751A840C9A070 /* [CP] Check Pods Manifest.lock */,
 				8E6D33F11DD1D79E00791F58 /* Sources */,
 				8E6D33F21DD1D79E00791F58 /* Frameworks */,
 				8E6D33F31DD1D79E00791F58 /* Resources */,
+				14D5AFD558AD3DDB86DB7FDD /* [CP] Embed Pods Frameworks */,
+				27E662CD69C49EC408A065CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E6D34201DD1D7A000791F58 /* Build configuration list for PBXNativeTarget "Epower1Tests" */;
 			buildPhases = (
+				26E081E828670D1E2D6A3F7A /* [CP] Check Pods Manifest.lock */,
 				8E6D34051DD1D7A000791F58 /* Sources */,
 				8E6D34061DD1D7A000791F58 /* Frameworks */,
 				8E6D34071DD1D7A000791F58 /* Resources */,
+				47C39BFB5CE6807EED10DEC0 /* [CP] Embed Pods Frameworks */,
+				25560D40005F21D95AC6B44F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E6D34231DD1D7A000791F58 /* Build configuration list for PBXNativeTarget "Epower1UITests" */;
 			buildPhases = (
+				377D4BF42B0C8D1B3C6B1BF5 /* [CP] Check Pods Manifest.lock */,
 				8E6D34101DD1D7A000791F58 /* Sources */,
 				8E6D34111DD1D7A000791F58 /* Frameworks */,
 				8E6D34121DD1D7A000791F58 /* Resources */,
+				5C023CF238F9497FE7405409 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Minimark;
 				TargetAttributes = {
 					8E6D33F41DD1D79E00791F58 = {
@@ -255,12 +315,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14D5AFD558AD3DDB86DB7FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epower1/Pods-Epower1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25560D40005F21D95AC6B44F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epower1Tests/Pods-Epower1Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26E081E828670D1E2D6A3F7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27E662CD69C49EC408A065CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epower1/Pods-Epower1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		377D4BF42B0C8D1B3C6B1BF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47C39BFB5CE6807EED10DEC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epower1Tests/Pods-Epower1Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C023CF238F9497FE7405409 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epower1UITests/Pods-Epower1UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE0408F262751A840C9A070 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E6D33F11DD1D79E00791F58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8E6D33FB1DD1D7A000791F58 /* ViewController.swift in Sources */,
+				8EDD0CAD1DE44EA1001AFB0A /* FirstTableTableViewController.swift in Sources */,
+				8EDD0CAF1DE48293001AFB0A /* FirstTableViewCell.swift in Sources */,
+				8E058A7E1DE4A4B80035F2BE /* FirstViewController.swift in Sources */,
+				8EDD0CB11DE48B61001AFB0A /* SecondViewController.swift in Sources */,
 				8E6D33F91DD1D7A000791F58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +521,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -356,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -384,6 +572,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -400,7 +589,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -411,6 +600,7 @@
 		};
 		8E6D341E1DD1D7A000791F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D8DC7049C0C1B65AD8C1D9 /* Pods-Epower1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RA9EDC73QA;
@@ -424,6 +614,7 @@
 		};
 		8E6D341F1DD1D7A000791F58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD7F958E0B73D73DE21BA1C /* Pods-Epower1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RA9EDC73QA;
@@ -437,6 +628,7 @@
 		};
 		8E6D34211DD1D7A000791F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25FAC91A80F5F7B0A4EF49E /* Pods-Epower1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -451,6 +643,7 @@
 		};
 		8E6D34221DD1D7A000791F58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F50BBE952B655973A07EC9E /* Pods-Epower1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -465,6 +658,7 @@
 		};
 		8E6D34241DD1D7A000791F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C08E8648D95C0FC2A4348765 /* Pods-Epower1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Epower1UITests/Info.plist;
@@ -478,6 +672,7 @@
 		};
 		8E6D34251DD1D7A000791F58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1812B41F2F4553F382E2238B /* Pods-Epower1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Epower1UITests/Info.plist;
@@ -508,6 +703,7 @@
 				8E6D341F1DD1D7A000791F58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E6D34201DD1D7A000791F58 /* Build configuration list for PBXNativeTarget "Epower1Tests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +712,7 @@
 				8E6D34221DD1D7A000791F58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E6D34231DD1D7A000791F58 /* Build configuration list for PBXNativeTarget "Epower1UITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +721,7 @@
 				8E6D34251DD1D7A000791F58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
