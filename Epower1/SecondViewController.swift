@@ -10,6 +10,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var jobch: UITextField!
+    @IBOutlet weak var statech: UITextField!
+    @IBOutlet weak var citych: UITextField!
+    var stateURL = "http://192.168.0.103/elec_dir/state.php"
+    var cityURL = "http://192.168.0.103/elec_dir/state.php"
+    var jonURL = "http://192.168.0.103/elec_dir/job.php"
     override func viewDidLoad() {
         super.viewDidLoad()
 
