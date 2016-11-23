@@ -10,6 +10,9 @@
 		4164ADA31DA2BC5F3861CD4F /* Pods_Epower1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276E7D1F8A2F33EDF35F1F47 /* Pods_Epower1UITests.framework */; };
 		83A5D01FAA48C89613D57274 /* Pods_Epower1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B62BE7F80086B7B8023EB5 /* Pods_Epower1.framework */; };
 		8E058A7E1DE4A4B80035F2BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */; };
+		8E33EB171DE57211001C86DC /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E33EB161DE57211001C86DC /* FirstCollectionViewCell.swift */; };
+		8E33EB191DE59901001C86DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E33EB181DE59901001C86DC /* HomeViewController.swift */; };
+		8E33EB1B1DE59A80001C86DC /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E33EB1A1DE59A80001C86DC /* HomeCollectionViewCell.swift */; };
 		8E6D33F91DD1D7A000791F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D33F81DD1D7A000791F58 /* AppDelegate.swift */; };
 		8E6D33FB1DD1D7A000791F58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6D33FA1DD1D7A000791F58 /* ViewController.swift */; };
 		8E6D33FE1DD1D7A000791F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6D33FC1DD1D7A000791F58 /* Main.storyboard */; };
@@ -47,6 +50,9 @@
 		59D8DC7049C0C1B65AD8C1D9 /* Pods-Epower1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1/Pods-Epower1.debug.xcconfig"; sourceTree = "<group>"; };
 		7F50BBE952B655973A07EC9E /* Pods-Epower1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epower1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epower1Tests/Pods-Epower1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8E33EB161DE57211001C86DC /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		8E33EB181DE59901001C86DC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E33EB1A1DE59A80001C86DC /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E6D33F51DD1D7A000791F58 /* Epower1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epower1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6D33F81DD1D7A000791F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E6D33FA1DD1D7A000791F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				8EDD0CAE1DE48293001AFB0A /* FirstTableViewCell.swift */,
 				8EDD0CB01DE48B61001AFB0A /* SecondViewController.swift */,
 				8E058A7D1DE4A4B80035F2BE /* FirstViewController.swift */,
+				8E33EB161DE57211001C86DC /* FirstCollectionViewCell.swift */,
+				8E33EB181DE59901001C86DC /* HomeViewController.swift */,
+				8E33EB1A1DE59A80001C86DC /* HomeCollectionViewCell.swift */,
 			);
 			path = Epower1;
 			sourceTree = "<group>";
@@ -443,9 +452,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E33EB171DE57211001C86DC /* FirstCollectionViewCell.swift in Sources */,
 				8E6D33FB1DD1D7A000791F58 /* ViewController.swift in Sources */,
 				8EDD0CAD1DE44EA1001AFB0A /* FirstTableTableViewController.swift in Sources */,
+				8E33EB191DE59901001C86DC /* HomeViewController.swift in Sources */,
 				8EDD0CAF1DE48293001AFB0A /* FirstTableViewCell.swift in Sources */,
+				8E33EB1B1DE59A80001C86DC /* HomeCollectionViewCell.swift in Sources */,
 				8E058A7E1DE4A4B80035F2BE /* FirstViewController.swift in Sources */,
 				8EDD0CB11DE48B61001AFB0A /* SecondViewController.swift in Sources */,
 				8E6D33F91DD1D7A000791F58 /* AppDelegate.swift in Sources */,

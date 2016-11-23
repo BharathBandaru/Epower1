@@ -12,7 +12,7 @@ import SwiftyJSON
 class FirstViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDelegate{
     var toolBar = UIToolbar()
     var placepicker = UIPickerView()
-    var firstURL = "http://192.168.0.103/elec_dir/top_cat.php"
+    var firstURL = "http://192.168.0.100/elec_dir/top_cat.php"
     var snos = Array<String>()
     var area_arr = Array<String>()
     @IBOutlet weak var areaField: UITextField!
