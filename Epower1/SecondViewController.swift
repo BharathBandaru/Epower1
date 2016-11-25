@@ -10,9 +10,9 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController , UIPickerViewDataSource, UIPickerViewDelegate{
     var pass : String?
-    
+    var statevalue: String?
     @IBOutlet weak var headlabel: UILabel!
     
     var snos = Array<String>()
@@ -24,11 +24,34 @@ class SecondViewController: UIViewController {
     var stateURL = "http://192.168.0.100/elec_dir/state.php"
     var cityURL = "http://192.168.0.100/elec_dir/city.php"
     var jonURL = "http://192.168.0.100/elec_dir/job.php"
+    var placepicker = UIPickerView()
+    var toolBar = UIToolbar()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       // callStateAlmo(url: stateURL)
-        callCityAlmo(url: cityURL)
+        callStateAlmo(url: stateURL)
+        //callCityAlmo(url: cityURL)
         headlabel.text = pass
+        
+        placepicker.delegate = self
+        placepicker.dataSource = self
+        statech.inputView = placepicker
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target:nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.canclePicker))
+        
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        statech.inputView = placepicker
+        statech.inputAccessoryView = toolBar
+        statevalue = "select.."
+
         
     }
     func callStateAlmo( url : String){
@@ -78,9 +101,9 @@ class SecondViewController: UIViewController {
         }
     }
     func callCityAlmo( url : String){
-        let para: [String: AnyObject] = ["state":"ap" as AnyObject]
+        let para: Parameters = ["state":"ap"]
         
-        Alamofire.request(url, method: .post, parameters: para, encoding: JSONEncoding.default)
+        Alamofire.request(url, method: .post, parameters: para)
             .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
                 print("Progress: \(progress.fractionCompleted)")
             }
@@ -91,7 +114,7 @@ class SecondViewController: UIViewController {
             .responseJSON { response in
                 print(response)
                 switch response.result {
-                case .success(let error):
+                case .success( _):
                     guard let resultValue = response.result.value else {
                         NSLog("Result value in response is nil")
                         return
@@ -140,5 +163,36 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func numberOfComponents(in pickerView: UIPickerView) -> Int
+    {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    {
+        
+        return state_arr.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+        statevalue = state_arr[row]
+        
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return state_arr[row]
+        
+    }
+
+    
+    func donePicker() -> Void {
+        statech.text = statevalue
+        self.view.endEditing(true)
+    }
+    func canclePicker() -> Void {
+        self.view.endEditing(true)
+    }
+    
 
 }

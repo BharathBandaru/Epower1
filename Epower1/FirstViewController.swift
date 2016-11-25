@@ -76,7 +76,7 @@ class FirstViewController: UIViewController , UIPickerViewDataSource, UIPickerVi
             .responseJSON { response in
                 
                 switch response.result {
-                case .success(let _):
+                case .success( _):
                     guard let resultValue = response.result.value else {
                         NSLog("Result value in response is nil")
                         return
