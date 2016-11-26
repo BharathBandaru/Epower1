@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class HomeViewController: UIViewController ,UICollectionViewDelegate , UICollectionViewDataSource{
     var topass : String?
-    var firstURL = "http://192.168.0.100/elec_dir/top_cat.php"
+    var firstURL = "http://192.168.0.103/elec_dir/top_cat.php"
     var snos = Array<String>()
     var jobcats = Array<String>()
     @IBOutlet weak var collectionview: UICollectionView!
