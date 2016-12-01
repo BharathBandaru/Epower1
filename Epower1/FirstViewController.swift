@@ -5,7 +5,7 @@
 //  Created by Bharath Bandaru on 22/11/16.
 //  Copyright © 2016 Minimark. All rights reserved.
 //
-
+import SystemConfiguration
 import UIKit
 import Alamofire
 import SwiftyJSON
@@ -18,10 +18,22 @@ class FirstViewController: UIViewController , UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var areaField: UITextField!
     @IBOutlet weak var firstBut: UIButton!
     var sample: String?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
         
+    }
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        DispatchQueue.main.async {
+            if(!self.isConnectedToNetwork()){
+                let alertController = UIAlertController(title: "No Internet!", message: "Please enable your connection.", preferredStyle: .alert)
+                self.present(alertController, animated: true, completion:nil)
+                let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+                    print("You've pressed OK button");
+                }
+                alertController.addAction(OKAction)
+            }
+        }
         firstBut.clipsToBounds=true
         firstBut.layer.cornerRadius=firstBut.frame.size.height/2
         self.navigationController!.navigationBar.tintColor = UIColor.white;
@@ -165,5 +177,30 @@ class FirstViewController: UIViewController , UIPickerViewDataSource, UIPickerVi
         // Pass the selected object to the new view controller.
     }
     */
+    func isConnectedToNetwork() -> Bool {
+        
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        guard let defaultRouteReachability = withUnsafePointer(to: &zeroAddress, {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
+            }
+        }) else {
+            return false
+        }
+        
+        var flags: SCNetworkReachabilityFlags = []
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return false
+        }
+        
+        let isReachable = flags.contains(.reachable)
+        let needsConnection = flags.contains(.connectionRequired)
+        
+        return (isReachable && !needsConnection)
+    }
+    
 
 }

@@ -12,15 +12,21 @@ import SwiftyJSON
 
 class HomeViewController: UIViewController ,UICollectionViewDelegate , UICollectionViewDataSource{
     var topass : String?
-    var firstURL = "http://192.168.0.103/elec_dir/top_cat.php"
+    var firstURL = "http://192.168.0.102/elec_dir/top_cat.php"
     var snos = Array<String>()
     var jobcats = Array<String>()
     @IBOutlet weak var collectionview: UICollectionView!
  
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
-        
+//        self.navigationController!.navigationBar.tintColor = UIColorFromRGB(rgbValue: 0x204B67)
+        self.navigationController!.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.black,
+           NSFontAttributeName : UIFont(name: "HelveticaNeue-Thin", size: 26)!
+        ]
+//        
         let parameters: Parameters = [:]
         
         Alamofire.request(firstURL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
@@ -115,5 +121,12 @@ class HomeViewController: UIViewController ,UICollectionViewDelegate , UICollect
     }
     
    
-
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
 }

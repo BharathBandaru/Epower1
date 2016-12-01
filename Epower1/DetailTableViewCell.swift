@@ -18,7 +18,8 @@ class DetailTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         myview.clipsToBounds=true
-        myview.layer.cornerRadius=20
+        myview.layer.cornerRadius=10
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

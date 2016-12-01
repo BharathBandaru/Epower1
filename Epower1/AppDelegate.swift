@@ -15,14 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 2);
 //        // Override point for customization after application launch.
 //        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .normal)
 //        
 //        UITabBar.appearance().tintColor = UIColor(red: 246/255, green: 78/255, blue: 10/255, alpha: 1.0)
 //        self.window?.tintColor = UIColor(red: 246/255, green: 78/255, blue: 10/255, alpha: 1.0)
 //        // UINavigationBar.appearance().barTintColor = UIColor(red: 59/255, green: 31/255, blue: 127/255, alpha: 1.0)
-//        UIToolbar.appearance().barTintColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
-
+//        UIToolbar.appearance().barTintColor = UIColor(red: 204/255, green: 04/255, blue: 204/255, alpha: 1.0)
+//        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().barTintColor = UIColorFromRGB(rgbValue: 0x1A3D54)
+        //UIToolbar.appearance().barTintColor = UIColor.white
         return true
     }
 
@@ -47,7 +50,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
 
 }
 
